@@ -22,7 +22,7 @@ public class AdvancedServlet extends HttpServlet {
 	throws ServletException, IOException {
 		
 		Mode mode = ModeSelector.getMode(req.getParameter("mode"));
-		
+		System.out.Println("I made a change here")
 		List<Module> modulesList = ModulesRegistry.getModulesList();
 		Collections.sort(modulesList);
 		req.setAttribute("modules", modulesList);
